@@ -41,4 +41,13 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 
+// Adding marker, circle, and polgon
+//    - Maybe polygon will be useful for capturing the precise zone
 
+var marker = L.marker([51.5, -0.09]).addTo(map);
+var circle = L.circle([51.508, -0.11], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.2,
+    radius: 2414.02
+}).addTo(map);
