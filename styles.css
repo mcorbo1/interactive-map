@@ -1,7 +1,9 @@
 
 /* Page elements */
 #reverseButton {
-    color: lightblue;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
 }
 
 /* Map stuff */
