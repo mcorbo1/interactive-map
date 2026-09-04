@@ -1,3 +1,4 @@
+// This is the button on the page
 const reverseButton = document.getElementById("reverseButton");
 
 function reverseText(input) {
