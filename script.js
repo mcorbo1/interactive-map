@@ -1,4 +1,6 @@
-// This is the button on the page
+
+// Reverse Button Logic
+
 const reverseButton = document.getElementById("reverseButton");
 
 function reverseText(input) {
@@ -18,3 +20,25 @@ reverseButton.addEventListener("click", function() {
     resultPara = document.getElementById("reversed-text");
     resultPara.innerHTML = reverseText(enteredText);
 });
+
+
+
+
+// ----------- MAP SCRIPTING
+
+// Creating map
+var map = L.map('map').setView([51.505, -0.09], 13);
+
+// Adding a tile layer to the map
+// Here, we use an OpenStreetMap tile layer.
+//   - This usually involves setting the URL template
+//     for the tile images, attribution text, and max
+//     zoom level of the layer. 
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    // attribution is for the bottom-right corner text citing the source for the map tile layer
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+
+
