@@ -10,4 +10,10 @@ function reverseText(input) {
     return reversedString;
 }
 
-reverseButton.addEventListener("click", function() {alert("test alert message")});
+reverseButton.addEventListener("click", function() {
+    textField = document.getElementById("search-input");
+    enteredText = textField.value;
+    
+    resultPara = document.getElementById("reversed-text");
+    resultPara.innerHTML = reverseText(enteredText);
+});
