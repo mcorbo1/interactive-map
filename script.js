@@ -29,15 +29,10 @@ reverseButton.addEventListener("click", function() {
 // Creating map
 var map = L.map('map').setView([51.505, -0.09], 13);
 
-// Adding a tile layer to the map
-// Here, we use an OpenStreetMap tile layer.
-//   - This usually involves setting the URL template
-//     for the tile images, attribution text, and max
-//     zoom level of the layer. 
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 19,
-    // attribution is for the bottom-right corner text citing the source for the map tile layer
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+// Trying Satellite Layer from Esri 
+L.tileLayer('https://arcgisonline.com{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+    maxZoom: 19
 }).addTo(map);
 
 
